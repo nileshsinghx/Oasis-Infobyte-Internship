@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hospital-ChatBot Azure-Webservice</title>
+  <!-- Page Icon -->
+  <link href="assets/img/favicon.png" rel="icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:nilesh26032001@gmail.com">nilesh26032001@gmail.com</a>
+        <i class="bi bi-phone"></i>+91 764-182-4737
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://twitter.com/nilexsh" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/nilexsh/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nillx/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Hospital</a></h1>
+      
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Homepage</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Medical Staff</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Hospital Web-Services</h1>
+      <h2>We try to provide the best medical services to everyone in our nation.</h2>
+      <a href="#about" class="btn-get-started scrollto">Let's Explore</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why To Use Our Services?</h3>
+              <p>
+                We provide the best services in this country and we assure that the people of our nation and also those who come from other nations get the best of their invested money.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Services</h4>
+                    <p>The hospital is filled with all sorts of facilities. More about them is mentioned below.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Departments</h4>
+                    <p>The hospital contains many departments like Neurology, Cardiology etc. More about them is given below in the department section.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Campus</h4>
+                    <p>The hospital campus is big enough to accommodate any number of people that may come with the patient.It provides great environment for the patients.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://youtu.be/cgOsZnvGla8" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>About us</h3>
+            <p>The Hospital is situated in the heart of the nation where lakhs of people come on a daily basis for checkup, surgery and all sorts of stuff. The Doctors here (such as <strong>dr. chanda</strong>, <strong>dr. mukharjee</strong>) are experts in their field. The Environment provided in the campus helps the patients to heal faster than lying just in a closed hospital room.</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Departments</a></h4>
+              <p class="description">The Hospital contains many departments such as Neurology, Eye-Care, Emergency ward, Pediatrics etc. All these departments are great in their work and they save almost every person that ever comes to them.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Faculties</a></h4>
+              <p class="description">The faculties of our hospital are very calm and understanding. They are humble to the patients and provide all kind of help to them as per their requirements. The nurses and ward boys all are trained to guide the patients to their required places.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Campus</a></h4>
+              <p class="description">The Campus is very big and is able to fit any number of people that may come with the patients even in the time of emergency. The garden and environment of the hospital provide a calm environment to the patiens suffering from a severe disease and the environment can help calm their mind and make them heal faster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Departments</h2>
+          <p>The Hospital contains lots of departments dedicated to various diseases, illnesses, organs and age. The hospital tries to provide every latest equipments and technology required by those departments so that they can work accordingly to their full potential.</p>
+        </div>
+       
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cardiology</h3>
+                    <p class="fst-italic">The Cardiology department is the Main site of healthcare of the hospital.</p>
+                    <p>The department provides the best Magnetic resonance imaging (MRI) output. It provides the patients with Electrocardiogram (ECG) reports, it also provides Echocardiogram (ultrasound) reports of the heart on the go. The department provides the hospital the base for preparing for all other treatments.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Neurology</h3>
+                    <p class="fst-italic">The Neurology department is the main site for all nerve problems.</p>
+                    <p>The neurology departmenet treats diseases related to the brain and spinal cord, Peripheral nerves and muscles. They work on the diseases suchh as epilepsy, stroke, multiple sclerosis(MS), Parkinson's disease etc.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hepatology</h3>
+                    <p class="fst-italic">The Hepatology department is the main site for all liver problems</p>
+                    <p>The Hepatology department works on diseases that effect liver, gallbladder, pancreas, billary tract etc.The department work on hepatic diseases such as hepatitis, fatty liver disease, pancreatitis and more. </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pediatrics</h3>
+                    <p class="fst-italic">The pediatric department deals with disease for Younger children below age 18.</p>
+                    <p>The pediatric department is the branch of medicine that invoves the medical care of infants, children and adolescents. pediatricians are trained to diagnose and treat a broad range of children illnesses.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Eye Care</h3>
+                    <p class="fst-italic">The Eye Care department deals with all diseases in the eye.</p>
+                    <p>The eye care department contains all sorts of equipments required to check the state of the eyes. It also contains an integrated glasses store so that the patients can get a pair of the prescribed power almost immidiately from the get go. The departmenet also conducts eye surgeries and Lazer treatments.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>The Hospital provides lots of services to the patients. They are mentioned below (such as Wheelchairs, Cardiac tests, X-rays, Blood test reports, Providing Medicines for the patients, DNA Verification, Providing Luxurious beds to the patients etc.) but they are not limited to just these services, the hospital handles all sorts of services and facilities required by the patients.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4><a href="">Cardiac-Tests</a></h4>
+              <p>Tests like ECG, Ultrasound, MRI, CCTA etc. The hospital provides best cardiac dotors that diagnose the problem real quick and provide solution in an instance.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4><a href="">Medicines</a></h4>
+              <p>The Hospital contains a pharmacy inside the hospital campus and the doctors mostly prescribe medicines available in that pharmacy only so that the patients can easily get access to their required medicines.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4><a href="">Hospital Beds</a></h4>
+              <p>The Hospital provides normal as well as AC rooms for the patients which they can avail according to their budget. Both types of room contain complementry food so that no one feels they are treated poorly than anyone else.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-dna"></i></div>
+              <h4><a href="">DNA Tests</a></h4>
+              <p>The Hospital also provide instant DNA Test reports which help people find their lost children very easily. The Test results take lesser time than most other Hospitals.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-wheelchair"></i></div>
+              <h4><a href="">WheelChairs</a></h4>
+              <p>The Hospital provides wheelchairs to their patients free of cost until they need that facility and the whole campus is made such that anyone with a wheelchair can access every part of the building (i.e Wheelchair Accessible).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <h4><a href="">Test Labrotories</a></h4>
+              <p>The tests are conducted in the world class labrotories and the test reports are provided to the patients as soon as possible which is between half an hour to 12 hrs after sample collection.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Medical Staff</h2>
+          <p>The doctors in this hospital are great. They are well versed on the things they work on. They provide the hospital their full devotion and loyality and work even on extra hours to save countless lives.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Rajesh Mukharjee</h4>
+                <span>Chief Medical Officer</span>
+                <p>He is a doctor in the cardiology department one of the best.</p>
+                <div class="social">
+                  <a href="https://twitter.com/nilexsh"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/nilexsh/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/nillx/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Mukesh Chanda</h4>
+                <span>Neurologist</span>
+                <p>He is a doctor in the neurological department one of the best.</p>
+                <div class="social">
+                  <a href="https://twitter.com/nilexsh"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com//"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/nilexsh/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/nillx/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Aman Mallik</h4>
+                <span>Anesthesiologist</span>
+                <p>He is a doctor in the anesthesia department. One of the finest.</p>
+                <div class="social">
+                  <a href="https://twitter.com/nilexsh"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/nilexsh/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/nillx/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr Nikita jain</h4>
+                <span>Neurosurgeon</span>
+                <p>She is a doctor in the neurology department. She can handle people's nerve pretty well.</p>
+                <div class="social">
+                  <a href="https://twitter.com/nilexsh"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/nilexsh/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/nillx/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>The Superior Technology used by our doctors is shown below in this beautiful gallery. The hospital contains all the neccessary equipments to save any Human life. </p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>There are many questions that may come to one's mind when they see this website. All those questions are answered here.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">For What purpose was this website created?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  This website was created as a project to be uploaded in github for a program named Future Ready Talent. This website was supposed to use one or more azure services and fall under the category health as I selected that topic.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What is the main topic of attention in the website?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The main topic of attention in this website is the chatbot that is supposed to interact with the patients who will use this kind of website. The names and pictures used in this project is all for eductional purposes and the resemblence of the names in the project with the real world people is purely coincidental. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What does the chatbot tell the patients about?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The chatbot tells the patients about the information about diseases, the doctors of the hospital, info about the hospital and since it is the era of covid-19 the bot also tells the patients about covid-19 and its precautions. There are a lot of diseases and it is a mini project so there are possibilities that the chatbot might not answer to each and every questions that a patient asks.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How can we creat such a chatbot for ourself and integrate it with our own website?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  With Azure Student Pack or though an actual azure subscription anyone can create a chatbot through creating a Question and Answer Knowledgebase and then integrating it to a web chatbot which can then be put in any website using iframe.(i.e If you know HTML and CSS its pretty easy.)
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Can the chatbot steal my identity or save my conversations?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Whatever the user askes is answered only through checking the already synthesised Knowledgebase and no other data from the user is saved anywhere for any purposes. Please avoid uploading your documents in the attachment of the chatbot. It accepts attachments but it only replies to text based messages and not to documents or pictures!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Hospital</h3>
+            <p>
+              xyz,<br>
+              Varanasi, Uttar Pradesh,<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 9999999999<br>
+              <strong>Email:</strong> nilesh26032001@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Hospital-Chatbot Azure-Webservice</span></strong>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://github.com/nileshsinghx">Nilesh Singh</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Closing Function -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Button Click function -->
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("iframe").toggle();
+      });
+    });
+    </script>
+  <!-- Back to top arrow -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Chatbot iframe -->
+  <iframe src='https://webchat.botframework.com/embed/healthchatbot-bot?s=W7fkwgc8DUs.IBB9eIXbyHhCmRiRFh4SRKbuLGDu4FwxWPkjEW9Dqtc'
+ style=' position: fixed; bottom: 15px; right: 12% ;width: 30%; min-height: 500px; border: 1px solid black;'></iframe>
+  <!-- Button -->
+  <button  class="app-button"style="">Health-ChatBot</button>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
