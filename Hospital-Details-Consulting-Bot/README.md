@@ -22,7 +22,7 @@ The website also contains links for my instagram, facebook and linkedin profiles
 ---
 
 **Example of the chatbot uses:-**
-  * Say Hi to ***Nilesh** your healthGuide.
+  * Say Hi to ***Raj** your healthGuide.
   * Ask him his name and interact with him.
   * Say ***Covid prevention*** to learn about covid-19 prevention
   * Say ***covid/corona*** to learn about corona
