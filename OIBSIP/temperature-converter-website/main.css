@@ -1,0 +1,31 @@
+body{
+    background-color: #333;
+    color: white;
+    
+}
+.temp-card{
+    width: 600px;
+}
+.size{
+    font-size: 20px;
+}
+@media(max-width:570px){
+ .temp-card{
+    width: 400px;
+}   
+}
+@media(max-width:465px){
+ .temp-card{
+    width: 170px;
+}   
+}
+@media(max-width:700px){
+ .temp-card{
+    width: 500px;
+}   
+}
+@media(max-width:600px){
+ .temp-card{
+    width: 450px;
+}   
+}

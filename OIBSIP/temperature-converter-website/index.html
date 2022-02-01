@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <h1 class=" display-4 mb-5 mt-5 head">
+                    Temperature Converter by Nilesh
+                </h1>
+                <form>
+                    <div class="form-group" id="cal">
+                        <input type="number" class="form-control form-control-lg mb-2 mb-5 temp-card" id="celsius" placeholder="Enter temperature in celsius">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-primary text-white p-1 mb-3 temp-card">
+                        <div class="card-block">
+                            <h4 class="">Fahrenheit:</h4>
+                            <div id="f-output" class="size"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success text-white p-1 mb-3 temp-card">
+                        <div class="card-block">
+                            <h4 class="">Rankie:</h4>
+                            <div id="r-output" class="size"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-warning text-white p-1 mb-3 temp-card">
+                        <div class="card-block">
+                            <h4 class="">Centigrade:</h4>
+                            <div id="c-output" class="size"></div>
+                        </div>
+                    </div>
+                    <div class="card card bg-danger text-white p-1 mb-3 temp-card">
+                        <div class="card-block">
+                            <h4 class="">Kelvin:</h4>
+                            <div id="k-output" class="size"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('output').style.visibility = "hidden";
+        document.getElementById("celsius").addEventListener('input', function(e) {
+            document.getElementById('output').style.visibility = "visible";
+            var l = parseFloat(e.target.value);
+
+            document.getElementById("f-output").innerHTML = roundNum(l * 1.8 + 32);
+            document.getElementById("r-output").innerHTML = roundNum((l + 273.15) * 9 / 5);
+            document.getElementById("c-output").innerHTML = e.target.value;
+            document.getElementById("k-output").innerHTML = roundNum(l + 273.15);
+
+
+        });
+        function roundNum(num){
+            return Math.round(num*100)/100;
+        }
+
+    </script>
+</body>
+
+</html>
