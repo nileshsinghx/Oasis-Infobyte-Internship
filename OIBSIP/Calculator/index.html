@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: rgb(143, 195, 211);
+        position: fixed;
+    }
+    .container{
+       
+        transform: translate(240% , 60%);
+        
+        
+    }
+    input{
+        width: 75px;
+        height: 45px;
+        margin-top: 5px;
+        border: 1px solid #607d8b;
+        color: white;
+        background-color: #607d8b;
+        font-size: 21px;
+        font-weight: 100;
+        font-family: Nunito;
+        outline: none;
+        letter-spacing: 1px;
+    }
+    #ans{
+        width: 231px;
+        background-color: white;
+        color: #607d8b;
+        height: 40px;
+        
+    }
+    #clear{
+        width: 75px;
+        
+    }
+    p{
+        color: white;
+        font-family: Nunito;
+        font-size: 48px;
+        position: fixed;
+        margin-left: 520px;
+        font-weight: 100;
+    }
+    #equal{
+        width: 75px;
+    }
+    </style>
+<body>
+   <p>Basic Calculator</p>
+    <div class="container">
+        <form name="forms">
+            <input type="text" name="answers" id="ans"><br>
+            
+            <input type="button" value="Clear" id="clear" onclick="forms.answers.value = '' ">
+            <input type="button" value="back" onclick="goBack()">           
+            <input type="button" value="/" onclick="forms.answers.value += '/'"><br>
+            
+            <input type="button" value="1" onclick="forms.answers.value += '1' ">
+            <input type="button" value="2" onclick="forms.answers.value += '2' ">
+            <input type="button" value="3" onclick="forms.answers.value += '3' ">
+            
+            <br>
+            
+            <input type="button" value="4" onclick="forms.answers.value += '4' ">
+            <input type="button" value="5" onclick="forms.answers.value += '5' ">
+            <input type="button" value="6" onclick="forms.answers.value += '6' ">
+            
+            <br>
+            
+            <input type="button" value="7" onclick="forms.answers.value += '7' ">
+            <input type="button" value="8" onclick="forms.answers.value += '8' ">
+            <input type="button" value="9" onclick="forms.answers.value += '9' ">
+            
+            <br>
+            
+            <input type="button" value="+" onclick="forms.answers.value += '+' ">
+            <input type="button" value="-" onclick="forms.answers.value += '-' ">
+            <input type="button" value="*" onclick="forms.answers.value += '*' "><br>
+            
+            
+            <input type="button" value="0" onclick="forms.answers.value += '0' ">
+            <input type="button" value="." onclick="forms.answers.value += '.' ">
+            <input type="button" value="=" id="equal" onclick="forms.answers.value = eval(forms.answers.value) ">
+            <br>
+            
+            
+            
+            
+            
+         
+            
+            
+            
+        </form>
+    </div>
+<script>
+    function goBack(){
+        var a = document.getElementById('ans').value;
+        document.getElementById('ans').value = a.substr(0, a.length - 1);
+    };
+    </script>
+    
+</body>
+</html>

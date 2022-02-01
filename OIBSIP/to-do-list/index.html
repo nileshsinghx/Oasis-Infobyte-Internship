@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <center>
+            <h1>My Daily Tasks</h1>
+    </center>
+    <div class="container">
+        <input type="text" placeholder="Add a Task" class="textBox">
+        <div class="notComplete">
+            <h3>Not Completed</h3>
+            <!-- <div class="task">
+                TASK
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-check"></i>
+            </div> -->
+            <!-- <div class="task">
+                TASK
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-check"></i>
+            </div> -->
+        </div>
+        <div class="complete">
+            <h3>Completed</h3>
+            <!-- <div class="task">
+                TASK
+                <i class="fas fa-trash-alt"></i>
+            </div>
+            <div class="task">
+                TASK
+                <i class="fas fa-trash-alt"></i>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(".textBox").on("keyup",function(e){
+            //13: Enter Button
+            if(e.keyCode == 13 && $(".textBox").val != ""){
+                var task = $("<div class='task'></div>").text($(".textBox").val());
+                var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+                    var p = $(this).parent();
+                    p.fadeOut(function(){
+                        p.remove();
+                    });
+                });
+                var chk = $("<i class='fas fa-check'></i>").click(function(){
+                    var p = $(this).parent();
+                    p.fadeOut(function(){
+                        $(".complete").append(p);
+                        p.fadeIn();
+                    });
+                    $(this).remove();
+                });
+                task.append(del,chk);
+                $(".notComplete").append(task);
+                $(".textBox").val("");
+            }
+        });  
+    </script>
+
+</body>
+</html>
